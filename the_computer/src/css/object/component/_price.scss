@@ -1,0 +1,101 @@
+/*price*/
+
+.c-price {
+    &__content {
+        display: flex;
+        margin-top: 80px;
+    }
+    &__image {
+        width: 0.378333*100%;
+    }
+    &__table {
+        width: 0.59*100%;
+        margin-left: auto;
+    }
+    &__attention {
+        font-size: 14px;
+        margin-top: 10px;
+        a {
+            font-weight: 700;
+        }
+    }
+}
+
+.table {
+    border-collapse: collapse;
+    border:  1px solid #efefef;
+    background: #fff;
+    font-weight: 700;
+    width: 100%;
+    table-layout: fixed;
+
+    th,
+    td {    
+        border: 1px solid #707070;
+        padding:  0 24px;
+        height: 58px;
+        vertical-align: middle;
+
+    }
+    th {
+        background: #999;
+        color: #fff;
+        text-align: center;
+
+        &:nth-child(1){
+            width: 172px;
+        }
+        
+    }
+
+    td {
+        text-align: center;
+    }
+
+    strong {
+        color: #E81919;
+        line-height: 1.2;
+    }
+
+    span {
+        font-size: 13px;
+        display: block;
+        margin-top: 1px;
+        line-height: 1.2;
+    }
+}
+
+// Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    
+}
+
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .c-price {
+        &__content {
+            display: block;
+        }
+        &__image {
+            display: block;
+            align-self: center;
+            width: 100%;
+            align-items: auto;
+        }
+        &__table {
+            margin-top: 24px;
+            width: 100%;
+        }
+    }
+    .table {
+        th {
+            &:nth-child(1){
+                    width: 112px;
+            }
+        }
+    }
+}
+

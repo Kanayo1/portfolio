@@ -1,0 +1,72 @@
+/*cardparts*/
+
+.c-card {
+    padding: 0 0 120px;
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: calc(33.333333% - 24px * 2 / 3);
+        background: #fff;
+        padding: 16px;
+        border-radius: 4px;
+        &:not(:nth-child(3n + 1)) {
+           margin-left: 24px;
+        }
+        &:nth-child(n + 4) {
+            margin-top: 24px;
+        }
+    }
+    &__img  {
+            max-width: 100%;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #6f7579;
+        margin-top: 14px;
+    }
+    &__text {
+        color: #6f7579;
+        font-weight: bold;
+    // line-height: ( 24 / 16 );
+        font-size: 16px;
+        margin-top: 14px; 
+    }
+}
+
+// Tablet
+// --------------------------------------------------
+@include media-breakpoint-tab {
+    .c-card__item {
+        width: calc(50% - 12px);
+
+        &:not(:nth-child(3n + 1)) {
+            margin-left: inherit;
+         }
+        &:nth-child(2n) {
+            margin-left: 24px;
+        }
+        
+        &:nth-child(n + 3) {
+            margin-top: 24px;
+        }
+
+    }
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .c-card__item {
+        width: 100%;
+
+        &:nth-child(n + 2){
+            margin-top: 24px;
+        }
+        &:not(:nth-child(3n + 1)) {
+            margin-left: initial;
+         }
+    }
+}

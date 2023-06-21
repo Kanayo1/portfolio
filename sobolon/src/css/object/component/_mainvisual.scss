@@ -1,0 +1,11 @@
+/* mainvisual */ 
+
+.c-mainvisual {
+    &__item {
+        .slick-slide {
+            width: 100%;
+            height: calc(100vh - 100px);
+        }
+    }
+}
+

@@ -1,0 +1,278 @@
+/*contact*/
+.c-contact {
+
+    &__from {
+        margin: 0px auto 0;
+        width: 800px;
+        max-width: 100%;
+        background: #fff;
+        padding: 60px;
+    }
+    &-from {
+        margin-top: 40px;
+        padding: 24px;
+
+        &__row {
+            display: flex;
+            
+            &:not(:first-child) {
+            margin-top: 60px;
+            }
+        }
+        &__label {
+            width: 160px;
+            padding: 5px 0 0;
+            margin: 0;
+            padding: 0;
+
+            label {
+                font-weight: 700;
+            }
+        
+                &__is-required {
+                    display: inline-block;
+                    position: relative;
+        
+                    &::after {
+                        content: "必須";
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        font-size: 14px;
+                        font-weight: 700px;
+                        color: white;
+                        background: #E81919;
+                        text-align: center;
+                        border-radius: 4px;
+                        padding: 3px 8px;
+                        line-height: 1;
+                    }
+                
+            }
+        }
+        &__input {
+            width: calc(100% - 160px);
+            margin: 0;
+            padding: 0;
+        
+            [type="text"] {
+                box-shadow: none;
+                border: 1px solid #707070;
+                background: #fff;
+                padding: 10px 16px;
+                appearance: none;
+                border-radius: 0;
+                color: inherit;
+                font-family: inherit;
+                font-size: 14px;
+                width: 100%;
+            }
+        
+            [type="email"] {
+                box-shadow: none;
+                border: 1px solid #707070;
+                background: #fff;
+                padding: 10px 16px;
+                appearance: none;
+                border-radius: 0;
+                color: inherit;
+                font-family: inherit;
+                font-size: 14px;
+                width: 100%;
+            }
+            select {
+                appearance: none;
+                border-radius: 0;
+                box-shadow: none;
+                border: 1px solid #707070;
+                padding: 17px 16px;
+                color: inherit;
+                font-family: inherit;
+                font-size: 14px;
+                width: 100%;
+                background: #fff url(../images/index/select-arrow.png) no-repeat right 12px center / 17px 14px; 
+            }
+        
+            textarea {
+                height: 240px;
+                box-shadow: none;
+                border: 1px solid #707070;
+                background: #fff;
+                padding: 10px 16px;
+                appearance: none;
+                border-radius: 0;
+                color: inherit;
+                font-family: inherit;
+                font-size: 14px;
+                width: 100%;
+                resize: none;
+            }
+        }
+        &__radio {
+            margin-top: 32px;
+        
+            [type="radio"] {
+                display: none;
+            } 
+            
+            span {
+                display: inline-block;
+                padding-left: 26px;
+                position: relative;
+                margin-right: 36px;
+        
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    border: 1px solid #707070;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #fff;
+                    border-radius: 50%;
+                }
+        
+                &::after {
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background: $color-main;
+                    position: absolute;
+                    left: 5px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                    display: none;
+                }
+            }
+        
+            [type="radio"]:checked + span {
+                &::after {
+                    display: block;
+                }
+            }
+        }
+    
+        &__check {
+            margin-top: 63px;
+            text-align: center;
+
+
+            [type="checkbox"] {
+                display: none;
+            }
+
+            span {
+                display: inline-block;
+                padding-left: 49px;
+                position: relative;
+                margin-right: 36px;
+
+                &::before {
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    background: #fff;
+                    border: 1px solid #707070;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+
+                &::after {
+                    content: "";
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    background: transparent url(../images/index/checkbox.png) no-repeat center center / contain;
+                    display: none;
+                }   
+            }
+
+            [type="checkbox"]:checked + span {
+                &::after {
+                    display: block;
+                }
+            }
+
+            a {
+            font-weight: 700; 
+            }
+        }
+
+        &__button {
+            margin-top: 30px;
+            text-align: center;
+        
+            [type="submit"] {
+                background: $color-main url(../images/index/button-arrow.png) no-repeat right 12px center / 17px 16px;
+                width: 304px;
+                display: inline-block;
+                font-weight: 700;
+                color: #fff;
+                padding:  14px 20px;
+                border-radius: 8px;
+                box-shadow: 0 3px 6px rgba(#000, 0.16);
+                appearance: none;
+                font-family: inherit;
+                border: none;
+                font-size: 14px;
+            }
+        }
+    }
+} 
+
+// Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    
+}
+
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .c-contact {
+        &-from {
+            &__row {
+                display: block;
+            }
+            
+            &__label {
+                    &__is-required {
+                        &::after {
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: calc(100% + 6px);
+                        width: 44px;
+                        }
+                    }
+            }
+            &__input {
+                width: 100%;
+                margin-top: 30px;
+            }
+            &__radio {
+                margin-top: 26px;
+            }
+            &__check {
+                margin-top: 40px;
+            }
+            span {
+                margin-bottom: 8px;
+            }
+            &__button {
+                [type="submit"] {
+                    width: 200px;
+                }
+            }
+        }
+        
+    }
+}

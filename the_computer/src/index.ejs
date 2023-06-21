@@ -1,0 +1,227 @@
+<%- include('_config', { extend: {
+	relativePath: '.',
+	page: {
+		id: 'index',
+		title: 'TOPページ',
+		description: 'TOPページです',
+	}
+}}); %><%- include('_header'); %>
+					<section class="p-card">
+						<div class="l-inner">
+							<h2 class="c-heading1">Card</h2>
+							<div class="c-card">
+								<div class="c-card__items">
+									<div class="c-card__item">
+										<div class="c-card__img"><img src="<%= getRelativePath('./images/index/card-img@2x.png'); %>" alt=""></div>
+										<div class="c-card__title">タイトルタイトル</div>
+										<div class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキスト</div>
+									</div>
+					
+									<div class="c-card__item">
+										<div class="c-card__img"><img src="<%= getRelativePath('./images/index/card-img@2x.png'); %>" alt=""></div>
+										<div class="c-card__title">タイトルタイトル</div>
+										<div class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキスト</div>
+									</div>
+					
+									<div class="c-card__item">
+										<div class="c-card__img"><img src="<%= getRelativePath('./images/index/card-img@2x.png'); %>" alt=""></div>
+										<div class="c-card__title">タイトルタイトル</div>
+										<div class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキスト</div>
+									</div>
+
+									<div class="c-card__item">
+										<div class="c-card__img"><img src="<%= getRelativePath('./images/index/card-img@2x.png'); %>" alt=""></div>
+										<div class="c-card__title">タイトルタイトル</div>
+										<div class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキスト</div>
+									</div>
+					
+									<div class="c-card__item">
+										<div class="c-card__img"><img src="<%= getRelativePath('./images/index/card-img@2x.png'); %>" alt=""></div>
+										<div class="c-card__title">タイトルタイトル</div>
+										<div class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキスト</div>
+									</div>
+					
+									<div class="c-card__item">
+										<div class="c-card__img"><img src="<%= getRelativePath('./images/index/card-img@2x.png'); %>" alt=""></div>
+										<div class="c-card__title">タイトルタイトル</div>
+										<div class="c-card__text">テキストテキストテキストテキストテキストテキストテキストテキスト</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</section>
+					<section class="p-news">
+						<div class="l-inner --narrow">
+							<h2 class="c-heading1">News</h2>
+							<div class="c-news">
+								<div class="c-news__list">
+									<div class="c-news__item">
+										<a href="" class="c-news__items">
+											<div class="c-news__meta">
+												<div class="c-news__day">2019-01-30</div>
+												<div class="c-news__cat --type1">ラベル１</div>
+											</div>
+											<div class="c-news__title">
+												newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。
+											</div>
+										</a>
+									</div>
+									<div class="c-news__item">
+										<a href="" class="c-news__items">
+											<div class="c-news__meta">
+												<div class="c-news__day">2019-01-30</div>
+												<div class="c-news__cat --type1 is-blue">ラベル2</div>
+											</div>
+											<div class="c-news__title">
+												newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。
+											</div>
+										</a>
+									</div>
+									<div class="c-news__item">
+										<a href="" class="c-news__items">
+											<div class="c-news__meta">
+													<div class="c-news__day">2019-01-30</div>
+													<div class="c-news__cat --type1 is-red">ラベル3</div>
+											</div>
+											<div class="c-news__title">
+												newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。
+											</div>
+										</a>
+									</div>
+									<div class="c-news__item">
+										<a href="" class="c-news__items">
+											<div class="c-news__meta">
+												<div class="c-news__day">2019-01-30</div>
+												<div class="c-news__cat --type1">ラベル１</div>
+											</div>
+											<div class="c-news__title">
+												newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。
+											</div>
+										</a>
+									</div>
+									<div class="c-news__item">
+										<a href="" class="c-news__items">
+											<div class="c-news__meta">
+												<div class="c-news__day">2019-01-30</div>
+												<div class="c-news__cat --type1">ラベル１</div>
+											</div>
+											<div class="c-news__title">
+												newsタイトルが入ります。newsタイトルが入ります。newsタイトルが入ります。
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="c-button --center"><a href="<%= getRelativePath('/news'); %>" class="c-button__link">more</a></div>
+						</div>
+					</section>
+					<section class="p-price">
+						<div class="l-inner --narrow">
+							<h2 class="c-heading1">Price</h2>
+							<div class="c-price__list">
+								<div class="c-price__content">
+									<div class="c-price__image"><img src="<%= getRelativePath('./images/index/price-img.png'); %>" alt=""></div>
+									<div class="c-price__table">
+										<table class="table">
+											<tr>
+												<th></th>
+												<th>column1</th>
+												<th>column2</th>
+											</tr>
+											<tr>
+												<th>row1</th>
+												<td>100円</td>
+												<td>100円</td>
+											</tr>
+											<tr>
+												<th>row2</th>
+												<td>6,000円</td>
+												<td>0円</td>
+											</tr>
+											<tr>
+												<th>row3</th>
+												<td><strong>6,000円</strong><span>今だけ半額</span></td>
+												<td>0円</td>
+											</tr>
+											<tr>
+												<th>row4</th>
+												<td>100円</td>
+												<td>100円</td>
+											</tr>
+										</table>
+										<div class="c-price__attention">※目安なので詳しくは<a href="">お問い合わせ</a>ください。</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</section>
+					<section class="p-access">
+						<div class="l-inner --narrow">
+							<h2 class="c-heading1">Access</h2>
+							<div class="c-access__map">
+								<div class="inframe__map">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.774606175581!2d130.36156831549533!3d33.585200949643955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354193b34bdf7d97%3A0x28b7dd592c8a6caa!2z44K544Kr44Kk44OE44Oq44O86KW_5paw!5e0!3m2!1sja!2sjp!4v1673400292769!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+							</div>
+							<dl class="c-access__info">
+								<div class="c-access__info-row">
+									<dt>住所</dt>
+									<dd>ほげほげほげのほげの場所</dd>
+								</div>
+								<div class="c-access__info-row">
+									<dt>アクセス</dt>
+									<dd>〇〇駅から右に５分</dd>
+								</div>
+							</dl>
+							<div class="c-access__button"><a href="">Googleマップで見る</a></div>
+						</div>
+					</section>
+
+					<section class="p-contact">
+						<div class="l-inner --narrow">
+							<h2 class="c-heading1">Contact</h2>
+							<div class="c-contact__from">
+								<form action="" class="c-contact-from">
+									<dl class="c-contact-from__dl">
+										<div class="c-contact-from__row">
+											<dt class="c-contact-from__label"><label for="your-name" class="c-contact-from__label__is-required">お名前</label></dt>
+											<dd class="c-contact-from__input"><input id="your-name" type="text" placeholder="山田　太郎"></dd>
+										</div>
+										<div class="c-contact-from__row">
+											<dt class="c-contact-from__label"><label for="your-email" class="c-contact-from__label__is-required">メールアドレス</label></dt>
+											<dd class="c-contact-from__input"><input id="your-email" type="email" placeholder="text@example.com"></div>
+										</dd>
+										<div class="c-contact-from__row">
+											<dt class="c-contact-from__label"><label for="your-kind">お問い合わせ種別</label></dt>
+											<dd class="c-contact-from__input">
+												<select name="" id="">
+													<option value="">セレクト１</option>
+													<option value="">セレクト２</option>
+													<option value="">セレクト３</option>
+												</select>
+											</dd>
+										</div>
+										<div class="c-contact-from__row">
+											<dt class="c-contact-from__label"><label for="your-message">お問い合わせ内容</label></dt>
+											<dd class="c-contact-from__input"><textarea name="" id="your-message" placeholder="お問い合わせを入力してください"></textarea>
+											</dd>
+										</div>
+									</dl>
+									<div class="c-contact-from__radio">
+										<label><input type="radio" name="your-radio" checked><span>ラジオ１</span></label>
+										<label><input type="radio" name="your-radio"><span>ラジオ２</span></label>
+										<label><input type="radio" name="your-radio"><span>ラジオ３</span></label>
+									</div>
+									<div class="c-contact-from__check">
+										<label><input type="checkbox"><span><a href="">プライバシーポリシー</a>に合意する</span></label>
+									</div>
+									<div class="c-contact-from__button">
+										<input type="submit" value="送信する">
+									</div>
+								</form>
+							</div>
+						</div>
+					</section>
+<%- include('_footer'); %>

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/*共通部分
+-----------------*/
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-image: url(../img/背景.png);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+/*==============================================
+header
+==============================================*/
+
+header-title {
+    font-family: "Roboto";
+    font-size: 30px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+
+/*==============================================
+body
+==============================================*/
+
+
+span {
+    color: red;
+}
+
+a {
+    color: blue;
+    margin-left: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    width: 100%;
+}
+
+p {
+    margin-left: 50px;
+}
+
+ul {
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.items{
+    margin: 15px;
+    border-top: 2px solid gray;
+}
+
+.subtitle {
+    font-size: 20px;
+    width: 10px;    
+}
+
+nav {
+    text-align: center;
+}
+
+li {
+    padding-top: 10px;
+}

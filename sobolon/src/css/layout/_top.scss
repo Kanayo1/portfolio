@@ -1,0 +1,45 @@
+
+/*top
+----------------------------------------------*/
+
+.top {
+    position: relative;
+}
+
+.top-picture {
+    @include mq(sm){
+        padding-top: 120%;
+        background: url(../../images/index/smtop.png) center center / cover;
+    }
+
+    @include mq(md){
+        padding-top: 55%;
+        background: url(../../images/index/top.png) top right / 82.5% no-repeat;
+    }
+    
+}
+
+.top-message {
+    @include mq (sm){
+        margin-top: 31px;
+    }
+
+    @include mq(md){
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        padding: 82px 44px 90px 40px;
+    }
+    
+}
+
+.top-message-title {    
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.top-message-text {
+    margin-top: 18px;
+}

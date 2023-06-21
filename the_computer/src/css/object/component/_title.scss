@@ -1,0 +1,41 @@
+/* title */ 
+
+.c-heading1{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 100px;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: $color-main;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// Tablet
+// --------------------------------------------------
+@include media-breakpoint-pc-tab {
+    
+}
+
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .c-heading1{
+        padding-top: 50px;
+        font-size: 26px;
+        padding-bottom: 18px;
+        &::after {
+            width: 42px;
+            height: 3px;
+        }
+    }
+}

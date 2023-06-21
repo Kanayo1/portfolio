@@ -1,0 +1,97 @@
+.l-footer {
+	background: linear-gradient(to bottom, #666666, #333333);
+    padding: 60px 0 24px;
+    color: #fff;
+
+	&__inner {
+		max-width: 100%;
+		width: 1823px;
+		padding: 0 00px;
+		margin: 0 40px;
+	}
+	&__contents {
+		display: flex;
+		margin-bottom: 46px;
+	}
+	&__address {
+		margin-top: 26px;
+	}
+	&____tel {
+		margin-top: 14px;
+	}
+	&__center {
+		width: 80%;
+	}
+	&__right {
+		width: 10%;
+	}
+	&__nav {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		li {
+			&:not(:first-child) {
+				margin-left: 40px;
+			}
+			a {
+				color: white;
+			}
+		}
+	}
+	&__sns {
+		display: flex;
+		justify-content: flex-end;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		li {
+			&:not(:first-child) {
+				margin-left: 16px;
+			}
+		}
+	}	
+	&__copyright {
+		text-align: center;
+		font-size: ( 14px / $font-size) * 1rem;
+	}
+}
+
+// Tablet
+// --------------------------------------------------
+@include media-breakpoint-tab {
+    .l-footer {
+		&__contents {
+			display: block;	
+		}	 
+		&__nav {
+				li {
+					&:not(:first-child) {
+						margin-left: 20px;
+					}
+				}
+		}
+		&__inner {
+			width: 380px;
+		}
+	}
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+	.l-footer {
+		&__contents {
+			display: block;	
+		}	 
+		&__nav {
+				li {
+					&:not(:first-child) {
+						margin-left: 20px;
+					}
+				}
+		}
+		&__inner {
+			width: 380px;
+		}
+	}
+}

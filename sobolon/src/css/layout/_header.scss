@@ -1,0 +1,119 @@
+.header {
+	background-color: white;
+	position: relative;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+	.header-hamburger-icon {
+		background-color: transparent;
+
+		.drawer-open {
+			background: transparent;
+		}
+	}
+}
+
+.drawer-hamburger-icon {
+	background-color: #3EA1D1;
+
+	&::before,
+	&::after {
+		background-color: #3EA1D1;
+	}
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+
+	@include mq(sm) {
+		height: 60px;
+	}
+}
+
+.header-logo {
+	width: 120px;
+	align-items: center;
+}
+
+.header-nav {
+	margin-left: auto;
+
+	@include mq(sm) {
+		top: 60px;
+		background-color: #3EA1D1;
+	}
+}
+
+.header-nav-list {
+	@include mq(md) {
+		display: flex;
+	}
+}
+
+.header-nav-item {
+	& + & {
+		margin-left: 46px;
+	}		
+}
+
+
+.header-nav-item-link {
+	display: block;
+	color: $font-color;
+	height: 70px;
+	line-height: 70px;
+	letter-spacing: 0.1em;
+
+	@include mq(sm) {
+		color: #FFFFFF;
+		padding-right: 15px;
+		text-align: right;
+		font-size: 18px;
+		height: 60px;
+		line-height: 60px;
+		letter-spacing: 1.8px;
+	}
+
+	@include mq(md) {
+		transition: color .4s;
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.sr-only {
+	border: 0;
+	clip: rect(0,0,0,0);
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px; 
+}
+
+
+@include mq(md){
+	.drawer-toggle {
+	border: 0;
+	clip: rect(10,10,10,10);
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	width: 1px; 
+}
+}
+
+
+
+
+.drawer-hamburger {
+	.drawer-right {
+	right: 3px;
+}
+}

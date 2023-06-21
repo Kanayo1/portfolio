@@ -1,0 +1,47 @@
+.about {
+    color: #fff;
+    position: relative;
+    padding: 120px 0;
+    @include mq(sm){
+        background: url(../../images/index/smcbg.png) center center / cover;
+        padding: 176px 0 52px;
+    }
+
+    @include mq(md){
+        background: url(../../images/index/bg.png) center center / cover;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .12);
+    }
+}
+
+.about-inner {
+    position: relative;
+}
+
+.about-title {
+    font-size: 22px;
+    font-weight: bold;
+
+    @include mq(sm){
+        font-size: 20px;
+    }
+}
+
+.about-text {
+    margin-top: 28px;
+
+    @include mq(sm){
+        font-size: 14px;
+        margin-top: 22px;
+        line-height: 1.7143;
+    }
+}

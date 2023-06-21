@@ -1,0 +1,16 @@
+/* display */ 
+.u-inlineBlock {
+	display: inline-block;
+}
+
+@include media-breakpoint-pc-tab {
+	.u-onlySp {
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-sp {
+    .u-onlyPc {
+		display: none !important;
+	}
+}

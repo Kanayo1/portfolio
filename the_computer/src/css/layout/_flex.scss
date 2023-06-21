@@ -1,0 +1,27 @@
+.l-flex {
+    display: flex;
+    flex-wrap: wrap;
+    &.--center {
+        align-items: center;
+    }
+    &.--reverse {
+        flex-direction: row-reverse;
+    }
+    @for $var from 1 to 12 {
+        &__col.--col#{$var} {
+            width: calc( 100% / (12 / #{$var}));
+        }  
+    }
+}
+
+// Phone
+// --------------------------------------------------
+@include media-breakpoint-sp {
+    .l-flex {
+        &.--spmax {
+            .l-flex__col {
+                width: 100%;
+            }
+        }
+    }
+}

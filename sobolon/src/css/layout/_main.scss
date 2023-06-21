@@ -1,0 +1,103 @@
+/*main==========================================*/
+
+/*common
+---------------------------------------------*/
+
+body {
+	font-style: 16px;
+	color: $font-color;
+	font-family: "ヒラギノ明朝 ProN, serif"
+}
+
+.inner {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 0 40px;
+	box-sizing: content-box;
+}
+
+img {
+	width: 100%;
+}
+
+.main {
+	padding-top: 70px;
+
+	@include mq(sm){
+		padding-top: 60px;
+	}
+}
+
+section {
+	margin-top: 160px;
+
+	@include mq(sm){
+		margin-top: 96px;
+	}
+}
+
+/*until
+----------------------------------------------*/
+.util-title {
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1;
+
+	@include mq(sm) {
+		font-size: 30px;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		height: 1px;
+		width: 60px;
+		background: $primary-color;
+		margin: 16px auto 0;
+	}
+}
+
+.util-link {
+	font-size: 14px;
+	letter-spacing: .1em;
+	color:$primary-color;
+	border: solid 1px $primary-color;
+	background: #fff;
+	display: inline-block;
+	padding: 10px 54px;
+	transition: background-color .4s, color .4s;
+
+	&.-active {
+		background-color: $primary-color;
+		color: #fff;
+	}
+
+	@include mq(md) {
+		&:not(.-submit){
+			&:hover {
+			background-color: $primary-color;
+			color: #fff;
+			}
+		}
+		
+	}
+}
+
+
+.section {
+	margin-top: 160px;
+}
+
+// 全体
+// --------------------------------------------------
+@media (max-width: 767px) { 
+	.is-pc {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	.is-sp{
+	display: none;
+	}
+} 

@@ -1,0 +1,95 @@
+
+/*concept
+----------------------------------------------*/
+.concept-inner {
+    margin-top: 64px;
+
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.concept-picture {
+    @include mq(md) {
+        flex: 0 0 50%;
+    }
+    
+}
+
+.concept-message {
+    @include mq(sm) {
+        margin-top: 35px;
+    }
+
+    @include mq(md) {
+        flex: 0 1 50%;
+        margin-left: 6.6667%;
+    }
+    
+}
+
+.concept-message-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.concept-message-text {
+    margin-top: 36px;
+
+    @include mq(sm) {
+        margin-top: 20px;
+    }
+}
+
+
+/*concept2
+----------------------------------------------*/
+
+.concept2-inner {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+}
+
+.concept2-picture {
+    margin-top: 160px;
+    @include mq(md) {
+        flex: 0 0 50%;
+        
+    }
+    
+}
+
+.concept2-message {
+    @include mq(sm){
+        margin-top: 34px;
+    }
+
+    @include mq(md) {
+        flex: 0 1 50%;
+        margin-right: 6.6667%;
+    }
+    
+}
+
+.concept2-message-title {
+    font-size: 28px;
+    font-weight: bold;
+
+    @include mq(sm){
+        font-size: 20px;
+    }
+}
+
+.concept2-message-text {
+    margin-top: 30px;
+
+    @include mq(sm){
+        font-size: 14px;
+        line-height: 1.7143;
+    }
+}

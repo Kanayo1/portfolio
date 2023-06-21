@@ -1,0 +1,14 @@
+/* pagetop */ 
+
+.c-pagetop {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    img {
+        width: 60px;
+        max-width: 100%;
+        height: auto;
+        border: none;
+    }
+}

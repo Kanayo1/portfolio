@@ -1,0 +1,68 @@
+.products {
+    max-width: 940px;
+
+    @include mq(sm){
+        max-width: 340px;
+        padding: 0 58px;
+    }
+}
+
+.products-list {
+    margin-top: 64px;
+
+    @include mq(sm){
+        margin-top: 48px;
+    }
+
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+.products-item {
+    @include mq(md) {
+        flex: 0 0 27.6%;
+    }
+
+    @include mq(sm){
+        margin-top: 40px;
+    }
+}
+
+.products-item-link {
+    display: block;
+    //color: $font-color;
+    background: #fff;
+    box-shadow: 3px 3px 15px rgba(96, 96, 96, 0.16);
+
+    @include mq(md) {
+        &:hover {
+            .products-item-picture > img{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.products-item-picture {
+    overflow: hidden; //はみ出し消す
+    >img {
+        transition: transform .4s;
+    }
+}
+
+.products-item-body {
+    margin-top: 22px;
+}
+
+.products-item-cost {
+    color: #989898;
+    margin-top: 10px;
+}
+
+.products-footer {
+    text-align: center;
+    margin-top: 44px;
+}

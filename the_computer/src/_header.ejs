@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">  
+	<title><%= getHeadPageTitle(); %></title>
+	<meta name="description" content="<%= getDescription(); %>">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<%= getSiteUrl(); %>">
+	<meta property="og:title" content="<%= getSiteTitle(); %>">
+	<meta property="og:description" content="<%= getDescription(); %>">
+	<meta property="og:image" content="<%= getSiteUrl(); %>/ogp.jpg">
+	<meta property="og:site_name" content="<%= getSiteTitle(); %>">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	<meta name="format-detection" content="telephone=no,email=no,address=no">
+	<link rel="shortcut icon" href="<%= getRelativePath('/favicon.ico'); %>">
+	<link rel="apple-touch-icon" href="<%= getRelativePath('/apple-touch-icon.png'); %>">
+	<link rel="stylesheet" href="<%= getRelativePath('/css/slick.css'); %>">
+	<link rel="stylesheet" href="<%= getRelativePath('/style.css'); %>">
+</head>
+<body class="<%= getBodyClass(); %>">
+	<div id="all">
+		<header class="l-header">
+			<div class="l-header__inner inner">
+				<div class="l-header__content">
+					<div class="l-header__logo"><h1><a href="<%= getRelativePath('/'); %>"><span><img src="<%= getRelativePath('./images/index/logo.png'); %>" alt=""></span></a></h1></div>
+					<nav class="l-header__nav">
+						<div class="l-header__nav__inner">
+							<div class="l-header__contents">
+								<ul class="l-header__list">
+									<li class="l-header__item --subitem">
+										<a href="<%= getRelativePath('/news'); %>">
+											<span class="l-header__nav__name">Card</span>
+										</a>
+									</li>
+									<li class="l-header__item --subitem">
+										<a href="<%= getRelativePath('/images'); %>">
+											<span class="l-header__nav__name">News</span>
+										</a>
+									</li>
+									<li class="l-header__item">
+										<a href="">
+											<span class="l-header__nav__name">Price</span>
+										</a>
+									</li>
+									<li class="l-header__item">
+										<a href="">
+											<span class="l-header__nav__name">Access</span>
+										</a>
+									</li>
+									<li class="l-header__item">
+										<a href="">
+											<span class="l-header__nav__name">Contact</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div> 
+					</nav>
+					<div class="l-menu__button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- /#header -->  
+		<div class="l-content">
+			<main id="l-primary"><% if (getPageId() == 'index') { %>
+				<div class="c-mainvisual">
+					<div class="c-mainvisual__item " >
+						<div class="c-mainvisual__title">
+							一番伝えたいことを書く
+						</div>
+						<div class="c-mainvisual__lead">
+							リードリードリード
+						</div>
+						<div class="c-mainvisual__button">
+							<a href="">
+							お問い合わせ
+							</a>
+						</div>
+					</div>
+				</div><% } else { %>
+				<div class="c-pagetitle">
+					<div class="c-pagetitle__image"></div>
+					<h2 class="c-pagetitle__heading"><% if (_.indexOf(_.keys(config.categories), config.page.category) !== -1) { %>
+						<strong><%- getEachPageTitle(); %></strong>
+						<% } %>
+					</h2>
+				</div>
+				<% } %>
+				<%- include('_breadline'); %>
+				<article class="<%= getArticleClass(); %>">
+
+					

@@ -1,0 +1,60 @@
+/*==============================================
+ipad
+==============================================*/
+
+@media (max-width: 1000px) {
+
+    section {
+        width: 50%;
+        font-size: 20px;
+        font-size: 10px;
+    }
+
+    header-title {
+        font-size: 15px;
+    }
+
+    .pic {
+        width: 60%;
+        margin-left: 50px;
+    }
+}
+
+/*==============================================
+phone
+==============================================*/
+
+@media (max-width: 670px) {
+
+    main {
+    width: 100%;
+    font-size: 5px;
+    display: block;
+    padding: 20px;
+    }
+
+    header-title {
+    font-size: 15px;
+    padding: 20 20px;
+    }
+
+    .pic {
+    width: 50%;
+   }
+   
+   section {
+    width: 100%;
+    display: block;
+
+   }
+
+   body {
+    background-size: contain;
+    background-repeat: repeat;
+   }
+}
+
+
+
+
+

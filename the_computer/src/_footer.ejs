@@ -1,0 +1,49 @@
+				</article>
+				<!-- /.<%= getArticleClass('.'); %> -->
+			</main>
+			<!-- /#primary -->
+			<div class="c-pagetop js-pagetop">
+				<a href="#top"><img src="<%= getRelativePath('./images/index/totop.png'); %>" alt=""></a>
+			</div>
+			<!-- /#pagetop -->
+		</div>
+		<!-- /#content -->
+		<footer class="l-footer">
+			<div class="l-footer__inner inner">
+				<div class="l-footer__contents">
+					<div class="l-footer__left">
+						<div class="l-footer__logo"><a href=""><img src="<%= getRelativePath('./images/index/logo.png'); %>" alt=""></a></div>
+							<div class="l-footer__address">住所：ほげほげのほげほげ</div>
+							<div class="l-footer__tel">TEL：0000-00-0000</div>
+					</div>
+					<div class="l-footer__center">
+						<ul class="l-footer__nav">
+							<li><a href="#card" class="l-footer__nav__item">Card</a></li>
+							<li><a href="#news" class="l-footer__nav__item">News</a></li>
+							<li><a href="#price" class="l-footer__nav__item">Price</a></li>
+							<li><a href="#access" class="l-footer__nav__item">Access</a></li>
+							<li><a href="#contact" class="l-footer__nav__item">Contact</a></li>
+						</ul>
+					</div>
+					<div class="l-footer__right">
+						<ul class="l-footer__sns">
+							<li ><a href="" target="_blank"><img src="<%= getRelativePath('./images/index/twitter.png'); %>" alt=""></a></li>
+							<li ><a href="" target="_blank"><img src="<%= getRelativePath('./images/index/facebook.png'); %>" alt=""></a></li>
+							<li ><a href="" target="_blank"><img src="<%= getRelativePath('./images/index/instagram.png'); %>" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="l-footer__copyright">Copyright © 2020 デイトラ All rights reserved.</p>
+			</div>
+		</footer> 
+		<!-- /#footer -->
+	</div>
+	<!-- /#all -->
+	<script src="<%= getRelativePath('/js/jquery-3.6.0.min.js'); %>"></script>
+	<script src="<%= getRelativePath('/js/script.js'); %>"></script>
+	<% if(getPageId() == 'index') { %>  
+		<script src="<%= getRelativePath('/js/slick.min.js'); %>"></script>
+		<script src="<%= getRelativePath('/js/index.js'); %>"></script>
+	<% } %>
+</body>
+</html>

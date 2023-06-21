@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">  
+	<title>sobolon</title>
+	<meta name="description" content="<%= getDescription(); %>">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<%= getSiteUrl(); %>">
+	<meta property="og:title" content="<%= getSiteTitle(); %>">
+	<meta property="og:description" content="sobolon - 海洋マイクロプラスチックを素材とした ハンドメイドアクセサリー">
+	<meta property="og:image" content="<%= getSiteUrl(); %>/ogp.jpg">
+	<meta property="og:site_name" content="<%= getSiteTitle(); %>">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	<meta name="format-detection" content="telephone=no,email=no,address=no">
+	<link rel="shortcut icon" href="<%= getRelativePath('/images/index/favicon.png'); %>">
+	<link rel="apple-touch-icon" href="<%= getRelativePath('/apple-touch-icon.png'); %>">
+	<link rel="stylesheet" href="<%= getRelativePath('/css/slick.css'); %>">
+	<!-- drawer.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css" media="screen and (max-width:767px)">
+	<link rel="stylesheet" href="<%= getRelativePath('/style.css'); %>">
+	<!--font awesome-->
+	<script src="https://kit.fontawesome.com/d1790c790c.js" crossorigin="anonymous"></script>
+	
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.js"></script>
+</head>
+<body class="drawer drawer--right" role="navigation">
+	<header id="js-header" class="header drawer-navbar--fixed">
+		<div class="header-inner inner">
+			<a href="<%= getRelativePath('/'); %>" class="header-logo"><img src="<%= getRelativePath('/images/index/logo.png'); %>" alt="sobolon"></a>
+			<button type="button" class="drawer-toggle drawer-hamburger">
+				<span class="sr-only">toggle navigation</span>
+				<span class="drawer-hamburger-icon"></span>
+			</button>
+			<nav class="drawer-nav header-nav">
+				<ul class="drawer-menu header-nav-list">
+					<li class="header-nav-item"><a class="header-nav-item-link" href="#concept">Concept</a></li>
+					<li class="header-nav-item"><a class="header-nav-item-link" href="#feature">Feature</a></li>
+					<li class="header-nav-item"><a class="header-nav-item-link" href="#products">Products</a></li>
+					<li class="header-nav-item"><a class="header-nav-item-link" href="#news">News</a></li>
+					<li class="header-nav-item"><a class="header-nav-item-link" href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!---/.header--->
+</body>
+
